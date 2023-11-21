@@ -51,7 +51,7 @@ def doScrape():
     csv_file_path = 'output.csv'
     with open(csv_file_path, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
-        csv_writer.writerow(['Closing Data', 'Est. Value Notes', 'Description'])
+        csv_writer.writerow(['Closing Date', 'Est. Value Notes', 'Description'])
         csv_writer.writerows(res)
 
 # Function to find the value of required data (closing date, est. value notes, etc.)
